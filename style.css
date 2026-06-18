@@ -7,7 +7,7 @@ body {
 }
 
 .topnav {
-    background-color: rgb(148, 179, 155);
+    background-color: #1b4d3e;
     overflow: hidden;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -15,7 +15,7 @@ body {
 
 .topnav a {
     display: inline-block;
-    color: azure;
+    color: #ffffff;
     text-align: center;
     text-decoration: none;
     padding: 16px 22px;
@@ -27,14 +27,14 @@ body {
 }
 
 .topnav a:hover {
-    background-color: rgb(0, 0, 0);
-    color:rgb(0, 0, 0)
+    background-color: #ffffff;
+    color: #1b4d3e;
     border-radius: 4px;
 }
 
 .banner {
-    background-color: #2e6f40 ;
-    color: azure;
+    background-color: #2c6b56 ;
+    color: #ffffff;
     text-align: center;
     padding: 80px 20px;
 }
@@ -56,10 +56,10 @@ body {
 }
 
 .content h2 {
-    color: rgb(0, 0, 0);
+    color: #1b4d3e;
     font-size: 28px;
     margin-top: 0;
-    border-bottom: 2px solid #2c4630;
+    border-bottom: 2px solid #f4f6f5;
     padding-bottom: 12px;
 }
 
