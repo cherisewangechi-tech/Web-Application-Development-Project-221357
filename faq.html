@@ -39,19 +39,47 @@
                 <div class="content p-4">
                     <h2 class="h4 mb-4">General Enquiries</h2>
                     
-                    <div class="mb-3 p-3 bg-light rounded-3 border-start border-3 border-success">
-                        <h4 class="h6 fw-bold text-dark">How do I register for an upcoming event?</h4>
-                        <p class="small text-muted mb-0">Navigate to our Register page, fill out your handicap index details, and submit the entry form before the close of registration on the Tuesday preceding the tournament.</p>
-                    </div>
+                    <div class="accordion" id="golfFaqAccordion">
 
-                    <div class="mb-3 p-3 bg-light rounded-3 border-start border-3 border-success">
-                        <h4 class="h6 fw-bold text-dark">Are caddies permitted during tournament rounds?</h4>
-                        <p class="small text-muted mb-0">Yes, caddies are fully permitted. However, players are strictly responsible for their caddie's conduct and adherence to local club regulations throughout the round.</p>
-                    </div>
+                        <div class="accordion-item mb-3 border-0 rounded-3 overflow-hidden shadow-sm">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    How do I register for an upcoming event?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#golfFaqAccordion">
+                                <div class="accordion-body bg-light text-muted small">
+                                    Navigate to our Register page, fill out your handicap index details, and submit the entry form before the close of registration on the Tuesday preceding the tournament.
+                                </div>
+                            </div>
+                        </div>
 
-                    <div class="p-3 bg-light rounded-3 border-start border-3 border-success">
-                        <h4 class="h6 fw-bold text-dark">What happens in the event of a tie?</h4>
-                        <p class="small text-muted mb-0">Ties for first place will be decided by a sudden-death playoff on a hole designated by the tournament committee. All other ties split seasonal points evenly.</p>
+                        <div class="accordion-item mb-3 border-0 rounded-3 overflow-hidden shadow-sm">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Are caddies permitted during tournament rounds?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#golfFaqAccordion">
+                                <div class="accordion-body bg-light text-muted small">
+                                    Yes, caddies are fully permitted. However, players are strictly responsible for their caddie's conduct and adherence to local club regulations throughout the round.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 rounded-3 overflow-hidden shadow-sm">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What happens in the event of a tie?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#golfFaqAccordion">
+                                <div class="accordion-body bg-light text-muted small">
+                                    Ties for first place will be decided by a sudden-death playoff on a hole designated by the tournament committee. All other ties split seasonal points evenly.
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -59,5 +87,6 @@
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
