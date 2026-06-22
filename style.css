@@ -1,81 +1,76 @@
 body {
-    font-family: 'Segoe ui', Arial, Helvetica, sans-serif;
+    background-color: #f8fafd;
+    color: #212529;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.3px;
     margin: 0;
     padding: 0;
-    background-color: #f0f4f2;
-    color: #1a1a1a;
 }
 
 .topnav {
-    background-color: #578866;
+    background-color: #212529;
     text-align: center;
     padding: 2px 0;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .topnav a {
     display: inline-block;
-    color: rgba(255, 255, 255, 0.85);
-    text-decoration: none;
+    color: #dae5dd;
     padding: 8px 16px;
-    text-decoration: none
-    font-size: 15px;
+    text-decoration: none;
+    font-size: 14px;
     font-weight: 600;
+    text-transform: uppercase;
     letter-spacing: 0.5px;
     transition: all 0.25s ease;
 }
 
 .topnav a:hover {
-    background-color: #ffffff;
-    color: #1b4d3e;
+    background-color: #1a5c35;
+    color: #ffffff;
 }
 
 .banner {
-    background: linear-gradient(135deg, #144d34, #0b291d);
+    background-color: #1a5c35;
     color: #ffffff;
     text-align: center;
     padding: 40px 20px;
-    border-bottom: 4px solid #d4af37;
+    box-shadow: inset 0 -10px 20px rgba(0, 0, 0, 0.05);
 }
 
 .banner h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
     margin: 0;
-    font-size: 44px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
 }
 
-.row {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 40px;
+.content {
     background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-radius: 16px;
+    border-left: 5px solid #1a5c35;
+    box-shadow: 0 8px 24px rgba(26, 92, 53, 0.08);
+    padding: 40px !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.content{
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    border-top: 5px solid #0f3d2a;
-    transition: transformation 0.3s ease;
+.content:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(26, 92, 53, 0.12);
 }
 
-.content h2 {
-    color: #0f3d2a;
-    font-size: 28px;
-    font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 20px;
+.table-dark {
+    background-color: #1a5c35 !important;
+    border-color: #1a5c35 !important;
+    color: #ffffff !important;
 }
 
-.content p {
-    font-size: 17px;
-    line-height: 1.7;
-    color: #444444;
+.accordion-button:not(.collapsed) {
+    background-color: rgba(26, 92, 53, 0.06) !important;
+    color: #1a5c35 !important;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%231a5c35'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
 }
