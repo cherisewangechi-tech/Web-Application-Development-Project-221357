@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frequently Asked Questions | Kenya Amateur Golf Circuit</title>
+    <title>FAQ | Kenya Amateur Golf Circuit</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -23,52 +23,132 @@
 
     <div class="banner">
         <span class="text-uppercase fw-bold tracking-wider small" style="color: #d4af37; letter-spacing: 2px;">Help Desk</span>
-        <h1 class="display-5 fw-bold mt-1">Frequently Asked Questions</h1>
+        <h1 class="display-5 fw-bold mt-1" style="color: #ffffff;">Frequently Asked Questions</h1>
     </div>
 
     <div class="container my-5">
         <div class="row g-4">
 
             <div class="col-lg-8">
-                <div class="d-flex flex-column gap-3">
+                <div class="accordion" id="circuitFaqAccordion">
 
-                    <div class="content">
-                        <h3 class="h6 fw-bold text-dark mb-2">Q: Who is eligible to participate in the circuit events?</h3>
-                        <p class="text-muted small mb-0">A: The circuit is strictly open to male and female golfers holding valid amateur status with an active handicap index verifiable via their official club handicap system.</p>
+                    <div class="accordion-item mb-3 border-0 shadow-sm" style="border-radius: 12px; overflow: hidden;">
+                        <h2 class="accordion-header" id="faqHeadingOne">
+                            <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="false" aria-controls="faqCollapseOne" style="background-color: #ffffff; padding: 20px; font-size: 0.95rem;">
+                                Q: Who is eligible to participate in the circuit events?
+                            </button>
+                        </h2>
+                        <div id="faqCollapseOne" class="accordion-collapse collapse" aria-labelledby="faqHeadingOne" data-bs-parent="#circuitFaqAccordion">
+                            <div class="accordion-body" style="background-color: #ffffff; padding: 0 20px 20px 20px; color: #555555; font-size: 0.9rem; line-height: 1.6;">
+                                <strong>A:</strong> The circuit is strictly open to male and female golfers holding valid amateur status with an active handicap index verifiable via their official club handicap system.
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="content">
-                        <h3 class="h6 fw-bold text-dark mb-2">Q: How are seasonal Order of Merit points calculated?</h3>
-                        <p class="text-muted small mb-0">A: Points are awarded based on final position finishes in each sanctioned event. Your top finishes accumulate over the season to determine the final championship standings.</p>
+                    <div class="accordion-item mb-3 border-0 shadow-sm" style="border-radius: 12px; overflow: hidden;">
+                        <h2 class="accordion-header" id="faqHeadingTwo">
+                            <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo" style="background-color: #ffffff; padding: 20px; font-size: 0.95rem;">
+                                Q: How are seasonal Order of Merit points calculated?
+                            </button>
+                        </h2>
+                        <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#circuitFaqAccordion">
+                            <div class="accordion-body" style="background-color: #ffffff; padding: 0 20px 20px 20px; color: #555555; font-size: 0.9rem; line-height: 1.6;">
+                                <strong>A:</strong> Points are awarded based on final position finishes in each sanctioned event. Your top finishes accumulate over the season to determine the final championship standings.
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="content">
-                        <h3 class="h6 fw-bold text-dark mb-2">Q: What is the cancellation policy for tournament entries?</h3>
-                        <p class="text-muted small mb-0">A: Players must withdraw at least 48 hours prior to the official day-one tee time to receive a full entry fee credit for subsequent calendar fixtures.</p>
+                    <div class="accordion-item mb-3 border-0 shadow-sm" style="border-radius: 12px; overflow: hidden;">
+                        <h2 class="accordion-header" id="faqHeadingThree">
+                            <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree" style="background-color: #ffffff; padding: 20px; font-size: 0.95rem;">
+                                Q: What rules framework governs the tournament play?
+                            </button>
+                        </h2>
+                        <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#circuitFaqAccordion">
+                            <div class="accordion-body" style="background-color: #ffffff; padding: 0 20px 20px 20px; color: #555555; font-size: 0.9rem; line-height: 1.6;">
+                                <strong>A:</strong> All events are strictly governed by the Rules of Golf as approved by the R&A Rules Limited, alongside specific Local Rules enacted by individual host venue tournament committees.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item mb-3 border-0 shadow-sm" style="border-radius: 12px; overflow: hidden;">
+                        <h2 class="accordion-header" id="faqHeadingFour">
+                            <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour" style="background-color: #ffffff; padding: 20px; font-size: 0.95rem;">
+                                Q: How do players register for an upcoming fixture?
+                            </button>
+                        </h2>
+                        <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour" data-bs-parent="#circuitFaqAccordion">
+                            <div class="accordion-body" style="background-color: #ffffff; padding: 0 20px 20px 20px; color: #555555; font-size: 0.9rem; line-height: 1.6;">
+                                <strong>A:</strong> Registrations can be submitted directly through our online registration portal or via the tournament secretariat desk at the designated host club before the entry deadline.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item mb-3 border-0 shadow-sm" style="border-radius: 12px; overflow: hidden;">
+                        <h2 class="accordion-header" id="faqHeadingFive">
+                            <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive" style="background-color: #ffffff; padding: 20px; font-size: 0.95rem;">
+                                Q: What happens in the event of an overall tie for first place?
+                            </button>
+                        </h2>
+                        <div id="faqCollapseFive" class="accordion-collapse collapse" aria-labelledby="faqHeadingFive" data-bs-parent="#circuitFaqAccordion">
+                            <div class="accordion-body" style="background-color: #ffffff; padding: 0 20px 20px 20px; color: #555555; font-size: 0.9rem; line-height: 1.6;">
+                                <strong>A:</strong> Ties for gross winner positions are resolved via a sudden-death hole playoff immediately following conclusion of play, while count-backs are utilized for net positions based on scorecard layouts.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item mb-3 border-0 shadow-sm" style="border-radius: 12px; overflow: hidden;">
+                        <h2 class="accordion-header" id="faqHeadingSix">
+                            <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseSix" aria-expanded="false" aria-controls="faqCollapseSix" style="background-color: #ffffff; padding: 20px; font-size: 0.95rem;">
+                                Q: Can rangefinders be used during play?
+                            </button>
+                        </h2>
+                        <div id="faqCollapseSix" class="accordion-collapse collapse" aria-labelledby="faqHeadingSix" data-bs-parent="#circuitFaqAccordion">
+                            <div class="accordion-body" style="background-color: #ffffff; padding: 0 20px 20px 20px; color: #555555; font-size: 0.9rem; line-height: 1.6;">
+                                <strong>A:</strong> Yes, players may use devices that measure distance only. Devices that measure slope, wind speed, or temperature are strictly prohibited under tournament play rules.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item mb-3 border-0 shadow-sm" style="border-radius: 12px; overflow: hidden;">
+                        <h2 class="accordion-header" id="faqHeadingSeven">
+                            <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseSeven" aria-expanded="false" aria-controls="faqCollapseSeven" style="background-color: #ffffff; padding: 20px; font-size: 0.95rem;">
+                                Q: When are tee times and draw sheets officially published?
+                            </button>
+                        </h2>
+                        <div id="faqCollapseSeven" class="accordion-collapse collapse" aria-labelledby="faqHeadingSeven" data-bs-parent="#circuitFaqAccordion">
+                            <div class="accordion-body" style="background-color: #ffffff; padding: 0 20px 20px 20px; color: #555555; font-size: 0.9rem; line-height: 1.6;">
+                                <strong>A:</strong> Official draw sheets are finalized and uploaded to the tour portal 48 hours prior to the first round of competition, and are also displayed on host club notices.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item mb-3 border-0 shadow-sm" style="border-radius: 12px; overflow: hidden;">
+                        <h2 class="accordion-header" id="faqHeadingEight">
+                            <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseEight" aria-expanded="false" aria-controls="faqCollapseEight" style="background-color: #ffffff; padding: 20px; font-size: 0.95rem;">
+                                Q: What is the cancellation policy for entry fee refunds?
+                            </button>
+                        </h2>
+                        <div id="faqCollapseEight" class="accordion-collapse collapse" aria-labelledby="faqHeadingEight" data-bs-parent="#circuitFaqAccordion">
+                            <div class="accordion-body" style="background-color: #ffffff; padding: 0 20px 20px 20px; color: #555555; font-size: 0.9rem; line-height: 1.6;">
+                                <strong>A:</strong> Cancellations made more than 72 hours prior to the scheduled first round tee time are eligible for full credit towards the next circuit event. Late withdrawals are non-refundable.
+                            </div>
+                        </div>
                     </div>
 
                 </div>
             </div>
 
             <div class="col-lg-4">
-                <div class="d-flex flex-column gap-3">
-
-                    <div class="p-2 bg-white rounded-4 shadow-sm border">
-                        <div class="card-thumb-container" style="height: 200px;">
-                            <img src="https://cdn.europosters.eu/image/750/posters/golf-ball-on-tee-in-the-i202379.jpg" 
-                                 alt="Golf Ball on Tee Macro Shot" 
-                                 class="w-100 h-100 rounded-3" style="object-fit: cover;">
-                        </div>
+                <div class="card border-0 shadow-sm p-2 mb-3" style="border-radius: 12px;">
+                    <div class="card-thumb-container">
+                        <img src="https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?auto=format&fit=crop&w=600&q=80" alt="Golf Ball on Tee">
                     </div>
-
-                    <div class="p-2 bg-white rounded-4 shadow-sm border">
-                        <div class="card-thumb-container" style="height: 180px;">
-                            <img src="https://t3.ftcdn.net/jpg/13/38/21/36/360_F_1338213678_XzT6gkcGnq6gUhB80iO0PTPQK1PUtw7X.jpg" 
-                                 alt="Golf Ball Graphic Alignment" 
-                                 class="w-100 h-100 rounded-3" style="object-fit: cover;">
-                        </div>
+                </div>
+                <div class="card border-0 shadow-sm p-2" style="border-radius: 12px;">
+                    <div class="card-thumb-container">
+                        <img src="https://images.unsplash.com/photo-1535131749006-b7f58c99034b?auto=format&fit=crop&w=600&q=80" alt="Golf Fairway Green">
                     </div>
-
                 </div>
             </div>
 
@@ -76,11 +156,60 @@
     </div>
 
     <footer class="site-footer">
-        <div class="container text-center">
-            <p class="fw-bold mb-2">Kenya Amateur Golf Circuit</p>
-            <div class="small text-muted">&copy; 2026 Kenya Amateur Golf Circuit. All Rights Reserved.</div>
+        <div class="container">
+            <div class="row g-4 text-start">
+
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="footer-heading">The Circuit</h4>
+                    <p class="footer-text pe-lg-4">
+                        The premier tournament framework for elite regional amateur tracking. Standardizing competition pathways across top-tier hosting clubs.
+                    </p>
+                    <ul class="footer-social-links mt-3">
+                        <li><a href="#">📘</a></li>
+                        <li><a href="#">𝕏</a></li>
+                        <li><a href="#">📸</a></li>
+                        <li><a href="#">💼</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul class="footer-link-list">
+                        <li><a href="index.html">Home Portal</a></li>
+                        <li><a href="about.html">About Circuit</a></li>
+                        <li><a href="schedule.html">Fixture Dates</a></li>
+                        <li><a href="leaderboard.html">Order of Merit</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <ul class="footer-link-list">
+                        <li class="footer-text">📍 P.O. Box 41651-00100<br>Nairobi, Kenya</li>
+                        <li class="footer-text">📞 Tel: +254 (0)20 2368440</li>
+                        <li class="footer-text">📱 Mob: +254 722 168 720</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-heading">Secretariat</h4>
+                    <ul class="footer-link-list">
+                        <li class="footer-text">✉️ info@kenyaamateurgolf.co.ke</li>
+                        <li class="footer-text">⏱️ Weekdays: 8AM - 5PM</li>
+                        <li class="footer-text">⛳ R&A Rulebook Compliant</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row footer-bottom text-center">
+                <div class="col-12">
+                    <p class="mb-0" style="color: #ffffff !important;">&copy; 2026 Kenya Amateur Golf Circuit. All Rights Reserved.</p>
+                </div>
+            </div>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

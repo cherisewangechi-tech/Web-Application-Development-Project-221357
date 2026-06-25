@@ -1,24 +1,18 @@
-/* ==========================================================================
-   1. GLOBAL & BODY STYLES
-   ========================================================================== */
 body {
-    background-color: #f8f9fa; /* Crisp Light Background */
-    color: #212529;            /* High-Contrast Body Text */
+    background-color: #f8f9fa;
+    color: #212529;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* ==========================================================================
-   2. NAVIGATION BAR
-   ========================================================================== */
 .topnav {
-    background-color: #113b21; /* Deep Executive Club Green */
+    background-color: #3b7250;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border-bottom: 3px solid #d4af37; /* Luxury Accent Gold */
+    border-bottom: 3px solid #d4af37;
 }
 
 .topnav a {
@@ -36,33 +30,27 @@ body {
 }
 
 .topnav a:hover {
-    background-color: #1a5c35; /* Signature Tournament Green */
-    color: #d4af37;            /* Luxury Accent Gold */
+    background-color: #1a5c35;
+    color: #d4af37;
 }
 
-/* ==========================================================================
-   3. BRAND BANNER (Restored to Premium Deep Green)
-   ========================================================================== */
 .banner {
-    background-color: #113b21; /* Brought back the deep executive green */
+    background-color: #113b21;
     padding: 40px 20px;
     text-align: center;
-    border-bottom: 4px solid #d4af37; /* Luxury Accent Gold bottom bar */
+    border-bottom: 4px solid #d4af37;
 }
 
 .banner h1 {
-    color: #ffffff; /* Bright white text for maximum readability */
+    color: #ffffff;
     margin: 0;
 }
 
-/* If you have subheadings inside your banner (like "OFFICIAL TOUR HUB") */
 .banner span {
-    color: #d4af37 !important; /* Forces the gold accent color */
+    color: #d4af37;
 }
 
-/* ==========================================================================
-   4. CONTENT CARDS & STRUCTURAL LAYOUTS
-   ========================================================================== */
+
 .content {
     background-color: #ffffff;
     padding: 30px;
@@ -72,40 +60,40 @@ body {
     height: 100%;
 }
 
-/* Custom Aspect Ratio Containers for Dynamic Images */
 .card-thumb-container {
     width: 100%;
-    height: 220px; /* Uniform structural capping */
+    height: 220px; 
     overflow: hidden;
     position: relative;
     border-radius: 8px;
+    margin-top: 15px;
 }
 
-/* ==========================================================================
-   5. PREMIUM MULTI-COLUMN SECRETARIAT FOOTER
-   ========================================================================== */
-/* ==========================================================================
-   5. PREMIUM MULTI-COLUMN SECRETARIAT FOOTER
-   ========================================================================== */
+.card-thumb-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
 .site-footer {
-    background-color: #113b21; /* Deep Executive Club Green */
+    background-color: #113b21;
     color: #ffffff !important;
     padding: 60px 0 30px 0;
-    border-top: 4px solid #d4af37; /* Luxury Accent Gold */
+    border-top: 4px solid #d4af37;
 }
 
-/* FORCED COLOR OVERRIDES FOR READABILITY */
 .site-footer p, 
 .site-footer span, 
 .site-footer div, 
 .site-footer .text-muted,
 .site-footer .small {
-    color: #ffffff !important; /* Forces all description and copyright text to bright white */
+    color: #ffffff !important;
 }
 
 .footer-heading {
-    color: #d4af37 !important; /* Keeps headings sharp luxury gold */
-    font-size: 0.9rem;
+    color: #d4af37 !important;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -136,10 +124,9 @@ body {
 }
 
 .footer-link-list a:hover {
-    color: #d4af37 !important; /* Luxury Accent Gold on hover */
+    color: #d4af37 !important;
 }
 
-/* Social Media Circles Matrix */
 .footer-social-links {
     display: flex;
     gap: 12px;
@@ -166,7 +153,6 @@ body {
     transform: translateY(-3px);
 }
 
-/* Bottom Copyright Strip */
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 25px;
