@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order of Merit Leaderboard | Kenya Amateur Golf Circuit</title>
+    <!-- Bootstrap 5 CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Unified Nav Bar -->
     <div class="topnav">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
@@ -21,14 +24,20 @@
         <a href="contact.html">Contact Us</a>
     </div>
 
-    <div class="banner">
-        <span class="text-uppercase fw-bold tracking-wider small" style="color: #d4af37; letter-spacing: 2px;">Championship Standings</span>
-        <h1 class="display-5 fw-bold mt-1" style="color: #ffffff;">Order of Merit</h1>
+    <!-- Pristine Brand Banner (Preserved Solid Dark Green Layout from image_32db37.jpg) -->
+    <div class="banner" style="background-color: #113b21; padding: 60px 0; border-bottom: 4px solid #d4af37;">
+        <div class="container text-center">
+            <span class="text-uppercase fw-bold tracking-wider small" style="color: #d4af37; letter-spacing: 3px; font-size: 0.85rem;">Championship Standings</span>
+            <h1 class="display-4 fw-bold mt-2 text-white" style="letter-spacing: 1px;">Order of Merit</h1>
+            <p class="text-white-50 small max-w-xl mx-auto mt-2" style="max-width: 600px;">Real-time ranking array tracking points accumulation for elite amateur field tournament categories.</p>
+        </div>
     </div>
 
+    <!-- Main Content Container -->
     <div class="container my-5">
         
-        <div class="row g-3 mb-4">
+        <!-- Performance Overview Metric Cards -->
+        <div class="row g-3 mb-5">
             <div class="col-md-4">
                 <div class="p-3 border-0 shadow-sm" style="background-color: #ffffff; border-radius: 12px; border-left: 4px solid #113b21 !important;">
                     <span class="text-uppercase text-secondary fw-bold small" style="font-size: 0.75rem; letter-spacing: 0.5px;">Tour Leader</span>
@@ -52,116 +61,235 @@
             </div>
         </div>
 
-        <div id="leaderboard-app-root" class="content">
+        <!-- Dynamic Two-Column Grid: Table + Image Panel Sidebar -->
+        <div class="row g-4">
             
-            <div class="row g-2 mb-4 align-items-center">
-                <div class="col-md-7">
-                    <input type="text" class="form-control form-control-sm p-2.5" placeholder="🔍 Search player name or hosting club affiliation..." style="border-radius: 8px; font-size: 0.9rem; border: 1px solid #e0e0e0;">
+            <!-- Left Column: Live Standings Dashboard Array -->
+            <div class="col-lg-8">
+                <div id="leaderboard-app-root" class="bg-white p-4 shadow-sm" style="border-radius: 14px;">
+                    
+                    <!-- Filter & Search Dashboard Controls -->
+                    <div class="row g-2 mb-4 align-items-center">
+                        <div class="col-md-7">
+                            <input type="text" id="playerSearch" class="form-control p-2.5" placeholder="🔍 Search player name or club..." style="border-radius: 8px; font-size: 0.9rem; border: 1px solid #e0e0e0;">
+                        </div>
+                        <div class="col-md-5">
+                            <select id="clubFilter" class="form-select p-2.5" style="border-radius: 8px; font-size: 0.9rem; border: 1px solid #e0e0e0; color: #495057;">
+                                <option value="">All Affiliated Clubs</option>
+                                <option value="Sigona Golf Club">Sigona Golf Club</option>
+                                <option value="Muthaiga Golf Club">Muthaiga Golf Club</option>
+                                <option value="Royal Nairobi Golf Club">Royal Nairobi Golf Club</option>
+                                <option value="Limuru Country Club">Limuru Country Club</option>
+                                <option value="Eldoret Club">Eldoret Club</option>
+                                <option value="Karen Country Club">Karen Country Club</option>
+                                <option value="Nyali Golf Club">Nyali Golf Club</option>
+                                <option value="Nakuru Golf Club">Nakuru Golf Club</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <!-- Standings Data Table Structure -->
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle mb-0" id="leaderboardTable">
+                            <thead style="background-color: #f8f9fa; border-bottom: 2px solid #e0e0e0;">
+                                <tr>
+                                    <th scope="col" class="text-center fw-bold text-secondary" style="width: 70px; font-size: 0.82rem; text-transform: uppercase;">Rank</th>
+                                    <th scope="col" class="fw-bold text-secondary" style="font-size: 0.82rem; text-transform: uppercase;">Player Name</th>
+                                    <th scope="col" class="fw-bold text-secondary" style="font-size: 0.82rem; text-transform: uppercase;">Home Club Affiliation</th>
+                                    <th scope="col" class="text-center fw-bold text-secondary" style="font-size: 0.82rem; text-transform: uppercase;">Events</th>
+                                    <th scope="col" class="text-end fw-bold text-secondary" style="width: 130px; font-size: 0.82rem; text-transform: uppercase; padding-right: 15px;">Total Points</th>
+                                </tr>
+                            </thead>
+                            <tbody style="border-top: none;">
+                                <!-- Player 1 -->
+                                <tr class="player-row">
+                                    <td class="text-center fw-bold"><span class="badge bg-dark px-2.5 py-1.5" style="border-radius: 4px; font-size: 0.85rem;">1</span></td>
+                                    <td class="fw-bold text-dark player-name">John Kiarie</td>
+                                    <td class="text-muted small player-club">Sigona Golf Club</td>
+                                    <td class="text-center fw-semibold">5</td>
+                                    <td class="text-end fw-bold text-success" style="padding-right: 15px;">420 pts</td>
+                                </tr>
+                                <!-- Player 2 -->
+                                <tr class="player-row">
+                                    <td class="text-center fw-bold"><span class="badge bg-secondary px-2.5 py-1.5" style="border-radius: 4px; font-size: 0.85rem;">2</span></td>
+                                    <td class="fw-bold text-dark player-name">Michael Mwangi</td>
+                                    <td class="text-muted small player-club">Muthaiga Golf Club</td>
+                                    <td class="text-center fw-semibold">5</td>
+                                    <td class="text-end fw-bold text-success" style="padding-right: 15px;">385 pts</td>
+                                </tr>
+                                <!-- Player 3 -->
+                                <tr class="player-row">
+                                    <td class="text-center fw-bold"><span class="badge px-2.5 py-1.5" style="background-color: #b87333; color: white; border-radius: 4px; font-size: 0.85rem;">3</span></td>
+                                    <td class="fw-bold text-dark player-name">David Omwamba</td>
+                                    <td class="text-muted small player-club">Royal Nairobi Golf Club</td>
+                                    <td class="text-center fw-semibold">4</td>
+                                    <td class="text-end fw-bold text-success" style="padding-right: 15px;">350 pts</td>
+                                </tr>
+                                <!-- Player 4 -->
+                                <tr class="player-row">
+                                    <td class="text-center text-secondary small fw-bold">4</td>
+                                    <td class="fw-semibold text-dark player-name">Samuel Karanja</td>
+                                    <td class="text-muted small player-club">Limuru Country Club</td>
+                                    <td class="text-center">5</td>
+                                    <td class="text-end fw-bold text-dark" style="padding-right: 15px;">310 pts</td>
+                                </tr>
+                                <!-- Player 5 -->
+                                <tr class="player-row">
+                                    <td class="text-center text-secondary small fw-bold">5</td>
+                                    <td class="fw-semibold text-dark player-name">Evans Kiprop</td>
+                                    <td class="text-muted small player-club">Eldoret Club</td>
+                                    <td class="text-center">4</td>
+                                    <td class="text-end fw-bold text-dark" style="padding-right: 15px;">295 pts</td>
+                                </tr>
+                                <!-- Player 6 -->
+                                <tr class="player-row">
+                                    <td class="text-center text-secondary small fw-bold">6</td>
+                                    <td class="fw-semibold text-dark player-name">Andrew Omwega</td>
+                                    <td class="text-muted small player-club">Karen Country Club</td>
+                                    <td class="text-center">5</td>
+                                    <td class="text-end fw-bold text-dark" style="padding-right: 15px;">280 pts</td>
+                                </tr>
+                                <!-- Player 7 -->
+                                <tr class="player-row">
+                                    <td class="text-center text-secondary small fw-bold">7</td>
+                                    <td class="fw-semibold text-dark player-name">Peter Ndwiga</td>
+                                    <td class="text-muted small player-club">Nyali Golf Club</td>
+                                    <td class="text-center">4</td>
+                                    <td class="text-end fw-bold text-dark" style="padding-right: 15px;">265 pts</td>
+                                </tr>
+                                <!-- Player 8 -->
+                                <tr class="player-row">
+                                    <td class="text-center text-secondary small fw-bold">8</td>
+                                    <td class="fw-semibold text-dark player-name">Francis Gikonyo</td>
+                                    <td class="text-muted small player-club">Sigona Golf Club</td>
+                                    <td class="text-center">5</td>
+                                    <td class="text-end fw-bold text-dark" style="padding-right: 15px;">250 pts</td>
+                                </tr>
+                                <!-- Player 9 -->
+                                <tr class="player-row">
+                                    <td class="text-center text-secondary small fw-bold">9</td>
+                                    <td class="fw-semibold text-dark player-name">Daniel Otieno</td>
+                                    <td class="text-muted small player-club">Nakuru Golf Club</td>
+                                    <td class="text-center">3</td>
+                                    <td class="text-end fw-bold text-dark" style="padding-right: 15px;">242 pts</td>
+                                </tr>
+                                <!-- Player 10 -->
+                                <tr class="player-row">
+                                    <td class="text-center text-secondary small fw-bold">10</td>
+                                    <td class="fw-semibold text-dark player-name">Joseph Kamau</td>
+                                    <td class="text-muted small player-club">Muthaiga Golf Club</td>
+                                    <td class="text-center">4</td>
+                                    <td class="text-end fw-bold text-dark" style="padding-right: 15px;">230 pts</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <div class="col-md-5">
-                    <select class="form-select form-select-sm p-2.5" style="border-radius: 8px; font-size: 0.9rem; border: 1px solid #e0e0e0; color: #495057;">
-                        <option selected>All Regional Affiliated Clubs</option>
-                        <option>Sigona Golf Club</option>
-                        <option>Muthaiga Golf Club</option>
-                        <option>Royal Nairobi Golf Club</option>
-                        <option>Limuru Country Club</option>
-                    </select>
-                </div>
-            </div>
-            
-            <div class="table-responsive">
-                <table class="table table-hover align-middle mb-0">
-                    <thead style="background-color: #f8f9fa; border-bottom: 2px solid #e0e0e0;">
-                        <tr>
-                            <th scope="col" class="text-center fw-bold text-secondary" style="width: 80px; font-size: 0.85rem; text-transform: uppercase;">Rank</th>
-                            <th scope="col" class="fw-bold text-secondary" style="font-size: 0.85rem; text-transform: uppercase;">Player Name</th>
-                            <th scope="col" class="fw-bold text-secondary" style="font-size: 0.85rem; text-transform: uppercase;">Home Club</th>
-                            <th scope="col" class="text-center fw-bold text-secondary" style="font-size: 0.85rem; text-transform: uppercase;">Events</th>
-                            <th scope="col" class="text-end fw-bold text-secondary" style="width: 140px; font-size: 0.85rem; text-transform: uppercase; padding-right: 20px;">Total Points</th>
-                        </tr>
-                    </thead>
-                    <tbody style="border-top: none;">
-                        <tr>
-                            <td class="text-center fw-bold"><span class="badge bg-dark px-2.5 py-1.5" style="border-radius: 6px; font-size: 0.85rem;">1</span></td>
-                            <td class="fw-bold text-dark">John Kiarie</td>
-                            <td class="text-muted small">Sigona Golf Club</td>
-                            <td class="text-center fw-semibold">5</td>
-                            <td class="text-end fw-bold text-success" style="padding-right: 20px; font-size: 0.95rem;">420 pts</td>
-                        </tr>
-                        <tr>
-                            <td class="text-center fw-bold"><span class="badge bg-secondary px-2.5 py-1.5" style="border-radius: 6px; font-size: 0.85rem;">2</span></td>
-                            <td class="fw-bold text-dark">Michael Mwangi</td>
-                            <td class="text-muted small">Muthaiga Golf Club</td>
-                            <td class="text-center fw-semibold">5</td>
-                            <td class="text-end fw-bold text-success" style="padding-right: 20px; font-size: 0.95rem;">385 pts</td>
-                        </tr>
-                        <tr>
-                            <td class="text-center fw-bold"><span class="badge px-2.5 py-1.5" style="background-color: #b87333; color: white; border-radius: 6px; font-size: 0.85rem;">3</span></td>
-                            <td class="fw-bold text-dark">David Omwamba</td>
-                            <td class="text-muted small">Royal Nairobi Golf Club</td>
-                            <td class="text-center fw-semibold">4</td>
-                            <td class="text-end fw-bold text-success" style="padding-right: 20px; font-size: 0.95rem;">350 pts</td>
-                        </tr>
-                        <tr>
-                            <td class="text-center fw-bold text-secondary" style="font-size: 0.9rem;">4</td>
-                            <td class="fw-semibold text-dark">Samuel Karanja</td>
-                            <td class="text-muted small">Limuru Country Club</td>
-                            <td class="text-center">5</td>
-                            <td class="text-end fw-bold text-dark" style="padding-right: 20px; font-size: 0.9rem;">310 pts</td>
-                        </tr>
-                        <tr>
-                            <td class="text-center fw-bold text-secondary" style="font-size: 0.9rem;">5</td>
-                            <td class="fw-semibold text-dark">Evans Kiprop</td>
-                            <td class="text-muted small">Eldoret Club</td>
-                            <td class="text-center">4</td>
-                            <td class="text-end fw-bold text-dark" style="padding-right: 20px; font-size: 0.9rem;">295 pts</td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
 
+            <!-- Right Column: Visual Photo Sidebar Media Cards -->
+            <div class="col-lg-4">
+                <div class="d-flex flex-column gap-4">
+                    
+                    <!-- Photo Card 1: Dreamstime Chipping/Putting Image -->
+                    <div class="card border-0 shadow-sm p-3" style="border-radius: 14px; background-color: #ffffff;">
+                        <span class="text-uppercase text-secondary fw-bold mb-2 d-block" style="font-size: 0.7rem; letter-spacing: 1.5px; color: #113b21 !important;">Championship Focus</span>
+                        <div class="card-thumb-container mb-3" style="height: 190px; overflow: hidden; border-radius: 8px;">
+                            <img src="https://thumbs.dreamstime.com/b/golf-player-putting-ball-hole-sunshine-154427231.jpg" alt="Golfer putting on the green under clear sunshine" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <h6 class="fw-bold text-dark mb-1">Clutch Performance on the 18th</h6>
+                        <p class="text-muted small mb-0" style="line-height: 1.5;">Standings remain highly volatile as top contenders refine margins on the greens across regional amateur fields.</p>
+                    </div>
+
+                    <!-- Photo Card 2: FIXED iStock Leaderboard Graphic Accent -->
+                    <div class="card border-0 shadow-sm p-3" style="border-radius: 14px; background-color: #ffffff;">
+                        <span class="text-uppercase text-secondary fw-bold mb-2 d-block" style="font-size: 0.7rem; letter-spacing: 1.5px; color: #d4af37 !important;">Circuit Metric Layout</span>
+                        <!-- Changed container height and used background styling with object-fit: contain to prevent truncation -->
+                        <div class="card-thumb-container mb-3 d-flex align-items-center justify-content-center" style="height: 200px; overflow: hidden; border-radius: 8px; background-color: #eef5f1;">
+                            <img src="https://media.istockphoto.com/id/165806831/vector/golf-leader-board.jpg?s=612x612&w=0&k=20&c=sNEg73uDdzYhjHP0R9D6hlK5lcrlNa3x9R-iSMyaA54=" alt="Structured vintage golf leaderboard design graphic" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold text-dark mb-1">Grid Tracking Framework</h6>
+                        <p class="text-muted small mb-0" style="line-height: 1.5;">Points values scale dynamically as arrays register verified match indices from our handicap database backend.</p>
+                    </div>
+
+                </div>
+            </div>
+            
         </div>
     </div>
 
-    <footer class="site-footer">
+    <!-- Executive Multi-Column Footer -->
+    <footer class="site-footer" style="background-color: #113b21; color: white; padding: 40px 0; font-size: 0.9rem; border-top: 4px solid #d4af37;">
         <div class="container">
             <div class="row g-4 text-start">
                 <div class="col-lg-4 col-md-6">
-                    <h4 class="footer-heading">The Circuit</h4>
-                    <p class="footer-text pe-lg-4">The premier tournament framework for elite regional amateur tracking. Standardizing competition pathways across top-tier hosting clubs.</p>
+                    <h4 class="footer-heading" style="color: #d4af37; font-size: 1.2rem; font-weight: bold; margin-bottom: 15px;">The Circuit</h4>
+                    <p class="footer-text pe-lg-4 text-white-50">The premier tournament framework for elite regional amateur tracking. Standardizing competition pathways across top-tier hosting clubs.</p>
                 </div>
                 <div class="col-lg-2 col-md-6">
-                    <h4 class="footer-heading">Navigation</h4>
-                    <ul class="footer-link-list">
-                        <li><a href="index.html">Home Portal</a></li>
-                        <li><a href="about.html">About Circuit</a></li>
-                        <li><a href="schedule.html">Fixture Dates</a></li>
-                        <li><a href="leaderboard.html">Order of Merit</a></li>
+                    <h4 class="footer-heading" style="color: #d4af37; font-size: 1.2rem; font-weight: bold; margin-bottom: 15px;">Navigation</h4>
+                    <ul class="footer-link-list list-unstyled">
+                        <li><a href="index.html" class="text-white-50 text-decoration-none">Home Portal</a></li>
+                        <li><a href="about.html" class="text-white-50 text-decoration-none">About Circuit</a></li>
+                        <li><a href="schedule.html" class="text-white-50 text-decoration-none">Fixture Dates</a></li>
+                        <li><a href="leaderboard.html" class="text-white-50 text-decoration-none">Order of Merit</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="footer-heading">Contact Info</h4>
-                    <ul class="footer-link-list">
-                        <li class="footer-text">📍 P.O. Box 41651-00100<br>Nairobi, Kenya</li>
-                        <li class="footer-text">📞 Tel: +254 (0)20 2368440</li>
+                    <h4 class="footer-heading" style="color: #d4af37; font-size: 1.2rem; font-weight: bold; margin-bottom: 15px;">Contact Info</h4>
+                    <ul class="footer-link-list list-unstyled text-white-50">
+                        <li class="mb-2">📍 P.O. Box 41651-00100<br>Nairobi, Kenya</li>
+                        <li>📞 Tel: +254 (0)20 2368440</li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="footer-heading">Secretariat</h4>
-                    <ul class="footer-link-list">
-                        <li class="footer-text">✉️ info@kenyaamateurgolf.co.ke</li>
-                        <li class="footer-text">⛳ R&A Rulebook Compliant</li>
+                    <h4 class="footer-heading" style="color: #d4af37; font-size: 1.2rem; font-weight: bold; margin-bottom: 15px;">Secretariat</h4>
+                    <ul class="footer-link-list list-unstyled text-white-50">
+                        <li class="mb-2">✉️ info@kenyaamateurgolf.co.ke</li>
+                        <li>⛳ R&A Rulebook Compliant</li>
                     </ul>
                 </div>
             </div>
-            <div class="row footer-bottom text-center">
+            <div class="row pt-4 mt-4 border-top border-secondary text-center">
                 <div class="col-12">
-                    <p class="mb-0" style="color: #ffffff !important;">&copy; 2026 Kenya Amateur Golf Circuit. All Rights Reserved.</p>
+                    <p class="mb-0 text-white-50">&copy; 2026 Kenya Amateur Golf Circuit. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- Bootstrap 5 JavaScript Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript Filtering Logic for Dashboard Real-Time Search -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('playerSearch');
+            const clubFilter = document.getElementById('clubFilter');
+            const tableRows = document.querySelectorAll('.player-row');
+
+            function filterTable() {
+                const searchText = searchInput.value.toLowerCase();
+                const selectedClub = clubFilter.value;
+
+                tableRows.forEach(row => {
+                    const playerName = row.querySelector('.player-name').textContent.toLowerCase();
+                    const playerClub = row.querySelector('.player-club').textContent;
+
+                    const matchesSearch = playerName.includes(searchText) || playerClub.toLowerCase().includes(searchText);
+                    const matchesClub = selectedClub === "" || playerClub === selectedClub;
+
+                    if (matchesSearch && matchesClub) {
+                        row.style.display = "";
+                    } else {
+                        row.style.display = "none";
+                    }
+                });
+            }
+
+            searchInput.addEventListener('input', filterTable);
+            clubFilter.addEventListener('change', filterTable);
+        });
+    </script>
 </body>
 </html>
