@@ -55,17 +55,17 @@
 
                             <div class="col-md-6">
                                 <label for="firstName" class="form-label small fw-bold text-dark">First Name</label>
-                                <input type="text" class="form-control rounded-3 border-secondary-subtle" id="firstName" required placeholder="e.g., Cherise">
+                                <input type="text" class="form-control rounded-3 border-secondary-subtle" id="firstName" required placeholder="e.g., Cherise" minlength="2" maxlength="50">
                             </div>
 
                             <div class="col-md-6">
                                 <label for="lastName" class="form-label small fw-bold text-dark">Last Name</label>
-                                <input type="text" class="form-control rounded-3 border-secondary-subtle" id="lastName" required placeholder="e.g., Wangechi">
+                                <input type="text" class="form-control rounded-3 border-secondary-subtle" id="lastName" required placeholder="e.g., Wangechi" minlength="2" maxlength="50">
                             </div>
 
                             <div class="col-md-6">
                                 <label for="playerEmail" class="form-label small fw-bold text-dark">Email Address</label>
-                                <input type="email" class="form-control rounded-3 border-secondary-subtle" id="playerEmail" required placeholder="player@example.com">
+                                <input type="email" class="form-control rounded-3 border-secondary-subtle" id="playerEmail" required placeholder="player@example.com" minlength="5" maxlength="50">
                             </div>
 
                             <div class="col-md-6">
@@ -80,12 +80,12 @@
 
                             <div class="col-md-6">
                                 <label for="homeClub" class="form-label small fw-bold text-dark">Home Club Affiliation</label>
-                                <input type="text" class="form-control rounded-3 border-secondary-subtle" id="homeClub" required placeholder="e.g., Sigona Golf Club">
+                                <input type="text" class="form-control rounded-3 border-secondary-subtle" id="homeClub" required placeholder="e.g., Sigona Golf Club" minlength="2" maxlength="40">
                             </div>
 
                             <div class="col-md-6">
                                 <label for="handicapIndex" class="form-label small fw-bold text-dark">Current Handicap Index</label>
-                                <input type="number" step="0.1" class="form-control rounded-3 border-secondary-subtle" id="handicapIndex" required placeholder="e.g., 5.4">
+                                <input type="number" step="0.1" class="form-control rounded-3 border-secondary-subtle" id="handicapIndex" required placeholder="e.g., 5.4" minlength="1" maxlength="5">
                             </div>
 
                             <div class="col-12 mt-4 pt-2">
@@ -159,5 +159,7 @@
     </footer>
 
     <script src="validation.js"></script>
+    <script src="script.js"></script>
+    
 </body>
 </html>
