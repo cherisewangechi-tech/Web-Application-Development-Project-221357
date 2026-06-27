@@ -1,3 +1,15 @@
+/* KENYA AMATEUR GOLF CIRCUIT - MAIN ARCHITECTURE
+   STYLESHEET MAP:
+   - Line 1:   Global Base Body Configs
+   - Line 9:   Header Navigation Bar (.topnav & .topnav a)
+   - Line 37:  Hero Tour Branding Banner (.banner & .banner h1/span)
+   - Line 54:  Content Presentation Layout (.content)
+   - Line 63:  Media Image Frame Grid (.card-thumb-container)
+   - Line 80:  Global Layout Footer (.site-footer & .footer-heading)
+   - Line 103: Footer Links & Social Node Layouts (.footer-text & .footer-social-links)
+   - Line 156: Footer Base Copyright Anchor (.footer-bottom)
+*/
+   
 body {
     background-color: #f8f9fa;
     color: #212529;
