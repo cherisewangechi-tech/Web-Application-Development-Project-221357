@@ -8,6 +8,7 @@
    - Line 80:  Global Layout Footer (.site-footer & .footer-heading)
    - Line 103: Footer Links & Social Node Layouts (.footer-text & .footer-social-links)
    - Line 156: Footer Base Copyright Anchor (.footer-bottom)
+   - Line 165: Fixture Card Custom Background Modifiers
 */
    
 body {
@@ -62,7 +63,6 @@ body {
     color: #d4af37;
 }
 
-
 .content {
     background-color: #ffffff;
     padding: 30px;
@@ -91,7 +91,7 @@ body {
 
 .site-footer {
     background-color: #113b21;
-    color: #ffffff !important;
+    color: #ffffff;
     padding: 60px 0 30px 0;
     border-top: 4px solid #d4af37;
 }
@@ -101,11 +101,11 @@ body {
 .site-footer div, 
 .site-footer .text-muted,
 .site-footer .small {
-    color: #ffffff !important;
+    color: #ffffff;
 }
 
 .footer-heading {
-    color: #d4af37 !important;
+    color: #d4af37;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -113,7 +113,7 @@ body {
 }
 
 .footer-text {
-    color: #ffffff !important;
+    color: #ffffff;
     font-size: 0.85rem;
     line-height: 1.8;
 }
@@ -130,13 +130,13 @@ body {
 }
 
 .footer-link-list a {
-    color: #e0e0e0 !important;
+    color: #e0e0e0;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .footer-link-list a:hover {
-    color: #d4af37 !important;
+    color: #d4af37;
 }
 
 .footer-social-links {
@@ -147,7 +147,7 @@ body {
 }
 
 .footer-social-links a {
-    color: #ffffff !important;
+    color: #ffffff;
     background-color: rgba(255, 255, 255, 0.08);
     width: 36px;
     height: 36px;
@@ -160,8 +160,8 @@ body {
 }
 
 .footer-social-links a:hover {
-    background-color: #d4af37 !important; 
-    color: #113b21 !important;            
+    background-color: #d4af37; 
+    color: #113b21;            
     transform: translateY(-3px);
 }
 
@@ -170,4 +170,23 @@ body {
     padding-top: 25px;
     margin-top: 40px;
     font-size: 0.8rem;
+}
+
+
+.major-fixture-card {
+    background: linear-gradient(rgba(11, 38, 21, 0.88), rgba(0, 0, 0, 0.88)), 
+                url('https://media.istockphoto.com/id/1424145594/photo/panorama-of-the-most-beautiful-sunset-or-sunrise-sand-bunker-on-a-golf-course-without-people.jpg?s=612x612&w=0&k=20&c=EcMeXAywGcvPOdp9R_eXKPeJS_3kMbkGwTzeSpZgltM=') no-repeat center center;
+    background-size: cover;
+    color: #ffffff !important;
+}
+
+.major-fixture-card p, 
+.major-fixture-card div {
+    color: #f8f9fa !important;
+}
+
+.season-fixtures-card {
+    background: linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.93)), 
+                url('https://t3.ftcdn.net/jpg/20/19/48/24/360_F_2019482427_jOZUDHKp9dyPUcOWXYASjbRrhhv7sYir.jpg') no-repeat center center;
+    background-size: cover;
 }

@@ -12,7 +12,7 @@
     <div class="topnav">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
-        <a href="schedule.html">Schedule</a>
+        <a href="schedule.html" class="active">Schedule</a>
         <a href="leaderboard.html">Leaderboard</a>
         <a href="rules.html">Rules</a>
         <a href="gallery.html">Gallery</a>
@@ -29,7 +29,8 @@
         <div class="row g-4">
             
             <div class="col-lg-4">
-                <div class="content p-4 text-center border-top-gold height-lock">
+                <!-- Added major-fixture-card class here -->
+                <div class="content p-4 text-center border-top-gold height-lock major-fixture-card">
                     <span class="badge bg-danger mb-2 px-3 py-2 text-uppercase font-weight-bold">Next Major Fixture</span>
                     <h2 class="h3 my-3" style="color: var(--primary-green); font-weight: 700;">Limuru Open Championship</h2>
                     <p class="text-muted small">The ultimate test of precision tracking on one of Kenya's most pristine courses.</p>
@@ -45,7 +46,8 @@
             </div>
 
             <div class="col-lg-8">
-                <div class="content p-4 p-md-5 height-lock">
+                <!-- Added season-fixtures-card class here -->
+                <div class="content p-4 p-md-5 height-lock season-fixtures-card">
                     <h2 class="h4 mb-4" style="color: var(--primary-green); font-weight: 700;">Upcoming Season Fixtures</h2>
                     
                     <div class="d-flex align-items-center justify-content-between p-3 mb-3 rounded border-start-brand background-hover">
@@ -141,6 +143,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
